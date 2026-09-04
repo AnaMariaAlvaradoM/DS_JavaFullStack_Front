@@ -26,5 +26,10 @@ export const routes: Routes = [
     path: 'mascotas/:id',
     loadComponent: () =>
       import('./pages/mascota-detalle/mascota-detalle').then(m => m.MascotaDetalle)
+  },
+  {
+    path: 'duenos',
+    loadComponent: () =>
+      import('./pages/duenos-listado/duenos-listado').then(m => m.DuenosListado)
   }
 ];
